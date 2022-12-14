@@ -8,7 +8,7 @@ resource "aws_s3_bucket" "s3_bucket" {
   }
 }
 
-resource "aws_s3_bucket_object" "sample_file" {
+resource "aws_s3_object" "sample_file" {
     bucket = var.s3_bucket_name
     key = var.s3_object_name
     # path = "."
